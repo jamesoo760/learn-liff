@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFF學習</title>
+
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+    
+</body>
+<script>
+    liff.init({
+        liffId: '1657398707-lA7n6RJq', // Use own liffId
+        withLoginOnExternalBrowser: true, // Enable automatic login process
+    }).then(() => {
+        // print the environment in which the LIFF app is running
+        console.log(liff.getLanguage());
+        console.log(liff.getVersion());
+        console.log(liff.isInClient());
+        console.log(liff.isLoggedIn());
+        console.log(liff.getOS());
+        console.log(liff.getLineVersion());
+    });
+</script>
+</html>
