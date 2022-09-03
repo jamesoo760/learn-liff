@@ -17,6 +17,11 @@
         withLoginOnExternalBrowser: true, // Enable automatic login process
     }).then(() => {
         // print the environment in which the LIFF app is running
+        
+        const info = `
+        <div>${liff.getLanguage()}</div>
+        `
+        alert(info)
         console.log(liff.getLanguage());
         console.log(liff.getVersion());
         console.log(liff.isInClient());
