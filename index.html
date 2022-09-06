@@ -18,16 +18,12 @@
     }).then(() => {
         // print the environment in which the LIFF app is running
         
-        const info = `
-        <div>${liff.getLanguage()}</div>
-        `
-        alert(info)
-        console.log(liff.getLanguage());
-        console.log(liff.getVersion());
-        console.log(liff.isInClient());
-        console.log(liff.isLoggedIn());
-        console.log(liff.getOS());
-        console.log(liff.getLineVersion());
+        alert("目前語言: "+ liff.getLanguage())
+        alert("SDK版本: "+ liff.getVersion())
+        alert("是否在LINE裡"+ liff.isInClient())
+        alert("是否已登入: "+ liff.isLoggedIn())
+        alert("手機系統: "+ liff.getOS())
+        alert("LINE目前版本: "+ liff.getLineVersion())
     });
 </script>
 </html>
